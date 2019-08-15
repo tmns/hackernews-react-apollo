@@ -1,11 +1,12 @@
 import React from "react";
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route } from "react-router-dom";
 
 import "../styles/App.css";
-import Header from './Header';
+import Header from "./Header";
 import CreateLink from "./CreateLink";
-import LinkList from './LinkList';
-import Login from './Login';
+import LinkList from "./LinkList";
+import Login from "./Login";
+import Search from "./Search";
 
 function App() {
   return (
@@ -16,10 +17,11 @@ function App() {
           <Route exact path="/" component={LinkList} />
           <Route exact path="/create" component={CreateLink} />
           <Route exact path="/login" component={Login} />
+          <Route exact path="/search" component={Search} />
         </Switch>
       </div>
     </div>
-  )
+  );
 }
 
 export default App;
